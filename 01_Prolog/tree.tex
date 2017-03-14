@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\begin{document}
+\begin{figure}[h]
+    \begin{tikzpicture}[level 1/.style={sibling distance=2.5cm},level 2/.style={sibling distance=1.5cm}]
+    \node {george + cecilia}[edge from parent fork down]
+    child { node  {\underline{maria} + albert}
+        child {node {tamara}}
+        child {node {alexandra}}
+        child {node {jessica}} }
+    child { node {howard}}
+    child { node {\underline{roger} + sarah}
+        child{node {brandon}}
+        child{node {nadia}}}
+    child { node {\underline{laura} + bob}
+        child {node {frank}}
+        child {node {anthony}}}
+    ;
+    \end{tikzpicture}
+\end{figure}
+\end{document}
