@@ -12,6 +12,7 @@ father(roger,nadia).
 father(bob,frank).
 father(bob,anthony).
 
+mother(cecilia,maria).
 mother(cecilia,howard).
 mother(cecilia,roger).
 mother(cecilia,laura).
@@ -43,7 +44,7 @@ female(nadia).
 
 parent(P, C) :- father(P, C).
 parent(P, C) :- mother(P, C).
-
+    
 grandparent(GP, GC) :-
 	parent(GP, P), 
 	parent(P, GC).
